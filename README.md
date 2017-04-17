@@ -5,11 +5,11 @@ This script works fine on UBUNTU 14.04
 
 Log into your VPS or your server and Type:
 
-wget https://github.com/caiomelzer/NodeAndLEMPServer/archive/master.zip 
+<code>wget https://github.com/caiomelzer/NodeAndLEMPServer/archive/master.zip</code>
 
 **NOTE**
-if you don´t have unzip, run this command:
-sudo apt-get install unzip
+If you don´t have unzip, run this command:
+<code>sudo apt-get install unzip</code>
 
 <code>unzip master.zip && cd NodeAndLEMPServer-master && source run.sh 'your domain'</code>
 
