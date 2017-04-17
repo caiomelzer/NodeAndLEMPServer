@@ -33,11 +33,15 @@ nvm alias default 7.9.0
 nvm use default
 echo "Step 5: NODEJS Installation Done"
 echo ""
-echo "Step 5: EXPRESS Installation Done"
+echo "Step 6: EXPRESS Installation Done"
 npm install -g express -y
-echo "Step 5: EXPRESS Installation Done"
+echo "Step 6: EXPRESS Installation Done"
 echo ""
-echo "Step 6: Restarting services..."
+echo "Step 7: EXPRESS Installation Done"
+npm install -g pm2 -y
+echo "Step 7: EXPRESS Installation Done"
+echo ""
+echo "Step 8: Restarting services..."
 sudo service nginx restart
 echo ""
 echo "*********************************************************"
