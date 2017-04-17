@@ -37,9 +37,9 @@ echo "Step 6: EXPRESS Installation Done"
 npm install -g express -y
 echo "Step 6: EXPRESS Installation Done"
 echo ""
-echo "Step 7: EXPRESS Installation Done"
+echo "Step 7: PM2 Installation Done"
 npm install -g pm2 -y
-echo "Step 7: EXPRESS Installation Done"
+echo "Step 7: PM2 Installation Done"
 echo ""
 echo "Step 8: Restarting services..."
 sudo service nginx restart
