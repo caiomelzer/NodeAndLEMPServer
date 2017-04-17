@@ -20,9 +20,11 @@ sudo apt-get install php5-fpm php5-mysql -y
 sudo service php5-fpm restart
 echo "Step 3: PHP Installation: Done!"
 echo ""
-echo "Step 4: Configure NGINX"
-
-echo "Step 4: Configure NGINX Done"
+echo "Step 4: PHPMYADMIN Installation"
+sudo apt-get install phpmyadmin -y
+sudo update-rc.d -f apache2 remove
+ln -s /usr/share/phpmyadmin /usr/share/nginx/html/phpmyadmin
+echo "Step 4: PHPMYADMIN Installation"
 echo ""
 echo "Step 5: NODEJS Installation"
 sudo apt-get install build-essential libssl-dev -y
