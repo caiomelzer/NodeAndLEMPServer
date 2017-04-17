@@ -2,7 +2,7 @@ server {
     listen 80;
     listen [::]:80 ipv6only=on;
 
-    root /usr/share/nginx/html;
+    root /usr/share/nginx/html/caiomelzer.ga;
     index index.php index.html index.htm;
 
     server_name caiomelzer.ga www.caiomelzer.ga;
