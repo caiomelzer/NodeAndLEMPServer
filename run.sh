@@ -21,16 +21,15 @@ sudo service php5-fpm restart
 echo "Step 3: PHP Installation: Done!"
 echo ""
 echo "Step 4: Configure NGINX"
-sudo rm -r /etc/nginx/sites-enabled/default
-sudo rm -r /etc/nginx/sites-available/default
-echo "server {
+echo "
+server {
     listen 80 default_server;
     listen [::]:80 default_server ipv6only=on;
 
     root /usr/share/nginx/html/"$1";
     index index.php index.html index.htm;
 
-    server_name "$1" www."$1"; 
+    server_name "$1" www."$1" ; 
 
     location / {
         try_files $uri $uri/ =404;
@@ -50,7 +49,8 @@ echo "server {
         fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
         include fastcgi_params;
     }
-}" > /etc/nginx/sites-available/"$1"
+}
+" > /etc/nginx/sites-available/$1
 sudo ln -s /etc/nginx/sites-available/"$1" /etc/nginx/sites-enabled/"$1"
 echo "Step 4: Configure NGINX Done"
 echo ""
