@@ -11,5 +11,5 @@ wget https://github.com/caiomelzer/NodeAndLEMPServer/archive/master.zip
 if you don´t have unzip, run this command:
 sudo apt-get install unzip
 
-unzip master.zip && cd NodeAndLEMPServer-master && source run.sh <your domain>
+unzip master.zip && cd NodeAndLEMPServer-master && source run.sh '<your domain>'
 
