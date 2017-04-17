@@ -5,19 +5,19 @@ echo "*            Email: melzer.caio@gmail.com               *"
 echo "*********************************************************"
 echo ""
 echo "Step 1: NGINX Installation"
---sudo apt-get update -q
---sudo apt-get install nginx -y
+sudo apt-get update -q
+sudo apt-get install nginx -y
 echo "Step 1: NGINX Installation: Done!"
 echo ""
 echo "Step 2: MYSQL Installation"
---sudo apt-get install mysql-server -y
---sudo mysql_install_db -y
---sudo mysql_secure_installation -y
+sudo apt-get install mysql-server -y
+sudo mysql_install_db -y
+sudo mysql_secure_installation -y
 echo "Step 2: MYSQL Installation: Done!"
 echo ""
 echo "Step 3: PHP Installation"
---sudo apt-get install php5-fpm php5-mysql -y
---sudo service php5-fpm restart
+sudo apt-get install php5-fpm php5-mysql -y
+sudo service php5-fpm restart
 echo "Step 3: PHP Installation: Done!"
 echo ""
 echo "Step 4: Configure NGINX"
