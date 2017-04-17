@@ -25,7 +25,7 @@ echo "Step 4: Configure NGINX"
 echo "Step 4: Configure NGINX Done"
 echo ""
 echo "Step 5: NODEJS Installation"
-sudo apt-get install build-essential libssl-dev
+sudo apt-get install build-essential libssl-dev -y
 curl https://raw.githubusercontent.com/creationix/nvm/v0.16.1/install.sh | sh
 source ~/.profile
 nvm install 7.9.0
