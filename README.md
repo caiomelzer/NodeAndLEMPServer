@@ -7,8 +7,8 @@ Log into your VPS or your server and Type:
 
 <code>wget https://github.com/caiomelzer/NodeAndLEMPServer/archive/master.zip</code>
 
-**NOTE**
-If you don´t have unzip, run this command:
+**NOTE**<br />
+If you don´t have unzip, run this command:<br />
 <code>sudo apt-get install unzip</code>
 
 <code>unzip master.zip && cd NodeAndLEMPServer-master && source run.sh 'your domain'</code>
