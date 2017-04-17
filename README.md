@@ -11,5 +11,5 @@ Log into your VPS or your server and Type:
 If you don´t have unzip, run this command:<br />
 <code>sudo apt-get install unzip</code>
 
-<code>unzip master.zip && cd NodeAndLEMPServer-master && source run.sh 'your domain'</code>
+<code>unzip master.zip && cd NodeAndLEMPServer-master && source run.sh</code>
 
