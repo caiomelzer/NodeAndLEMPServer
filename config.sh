@@ -14,7 +14,12 @@ mkdir /usr/share/nginx/html/myweb.tk
 cp myweb.tk /etc/nginx/sites-available/
 ln -s /etc/nginx/sites-available/myweb.tk /etc/nginx/sites-enabled/myweb.tk
 
-echo "Step 3: Restarting Server"
+echo "Step 3: Configuration of Default Domain"
+mkdir /usr/share/nginx/html
+cp home /etc/nginx/sites-available/
+ln -s /etc/nginx/sites-available/home /etc/nginx/sites-enabled/home
+
+echo "Step 4: Restarting Server"
 sudo service nginx restart
 echo ""
 echo "*********************************************************"
