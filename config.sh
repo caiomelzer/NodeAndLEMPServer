@@ -19,7 +19,12 @@ mkdir /usr/share/nginx/html
 cp home /etc/nginx/sites-available/
 ln -s /etc/nginx/sites-available/home /etc/nginx/sites-enabled/home
 
-echo "Step 4: Restarting Server"
+echo "Step 4: Configuration of TaxData Domain"
+mkdir /usr/share/nginx/html/taxdata.tk
+cp taxdata.tk /etc/nginx/sites-available/
+ln -s /etc/nginx/sites-available/taxdata.tk /etc/nginx/sites-enabled/taxdata.tk
+
+echo "Step 5: Restarting Server"
 sudo service nginx restart
 echo ""
 echo "*********************************************************"
