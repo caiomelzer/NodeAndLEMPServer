@@ -4,6 +4,7 @@ echo "*            Author: Caio Melzer de Oliveira            *"
 echo "*            Email: melzer.caio@gmail.com               *"
 echo "*********************************************************"
 echo ""
+cd /usr/share/nginx/html/
 echo "Step 1: Configuration of Domain caiomelzer.ga"
 mkdir /usr/share/nginx/html/caiomelzer.ga
 cp caiomelzer.ga /etc/nginx/sites-available/
@@ -28,7 +29,6 @@ echo "Step 5: Configuration of TaxData Domain"
 mkdir /usr/share/nginx/html/agentejunto.tk
 cp agentejunto.tk /etc/nginx/sites-available/
 ln -s /etc/nginx/sites-available/agentejunto.tk /etc/nginx/sites-enabled/agentejunto.tk
-
 
 echo "Step 6: Restarting Server"
 sudo service nginx restart
