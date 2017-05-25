@@ -24,7 +24,13 @@ mkdir /usr/share/nginx/html/taxdata.tk
 cp taxdata.tk /etc/nginx/sites-available/
 ln -s /etc/nginx/sites-available/taxdata.tk /etc/nginx/sites-enabled/taxdata.tk
 
-echo "Step 5: Restarting Server"
+echo "Step 5: Configuration of TaxData Domain"
+mkdir /usr/share/nginx/html/agentejunto.tk
+cp agentejunto.tk /etc/nginx/sites-available/
+ln -s /etc/nginx/sites-available/agentejunto.tk /etc/nginx/sites-enabled/agentejunto.tk
+
+
+echo "Step 6: Restarting Server"
 sudo service nginx restart
 echo ""
 echo "*********************************************************"
